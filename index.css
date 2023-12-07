@@ -73,3 +73,22 @@ select {
   }
 }
 /* end of css reset */
+
+.container {
+  margin: 0 auto;
+  width: 500px;
+  max-width: 100%;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-top: 1em;
+}
+
+button {
+  margin-top: 1em;
+}
