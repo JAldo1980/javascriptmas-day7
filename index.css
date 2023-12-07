@@ -35,6 +35,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: "Poppins", sans-serif;
 }
 
 /* A elements that don't have a class get default styles */
@@ -74,10 +75,44 @@ select {
 }
 /* end of css reset */
 
+body {
+  background-image: url(/background-2.png);
+  background-size: fixed; /* Change this to fixed */
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
 .container {
-  margin: 0 auto;
+  margin: 1em auto;
   width: 500px;
   max-width: 100%;
+  padding: 1em;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 20px #cf181f;
+}
+header p {
+  font-size: 1.3rem;
+  color: #f8d040;
+}
+
+.dark-light-toggle-box {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.toggle-state {
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
 
 .input-section {
@@ -87,8 +122,120 @@ select {
 
 input {
   margin-top: 1em;
+  padding: 0.5em;
+  border: none;
+  border-radius: 8px;
+  background-color: lightcyan;
+}
+
+.add-btn {
+  background-color: #74d680;
+  padding: 1em;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.add-btn:hover {
+  background-color: green;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.filter-btn {
+  background-color: #f7ef8a;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.filter-btn:hover {
+  background-color: #f8d040;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+/* CARD STYLING */
+
+main {
+  margin-top: 3em;
+}
+
+.card-container {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  gap: 2em;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.outer-object-card {
+  justify-content: space-between;
+  background-color: #de1a21;
+  width: 370px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 1em;
+}
+
+.item-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.item-box a {
+  color: white;
+  cursor: pointer;
+}
+
+.item-ui {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.star-icon,
+.delete-btn {
+  cursor: pointer;
+  font-size: 1.8em;
+  border-radius: 6px;
+}
+
+.delete-btn {
+  background-color: white;
+  padding: 0.1em.3em;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: grey;
+  transition: 0.2s;
 }
 
 button {
   margin-top: 1em;
+  padding: 0.5em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.delete {
+  display: none;
 }

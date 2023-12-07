@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="index.css" />
     <title>xmas-wish-list</title>
   </head>
@@ -11,24 +17,33 @@
     <div class="wrapper">
       <div class="container">
         <header>
-          <h1>Header</h1>
+          <h1>Christmas Wishlist Builder</h1>
+          <p>Build the gift list of your dreams!</p>
         </header>
+        <div class="dark-light-toggle-box">
+          <div id="dark-light-toggle">🌙</div>
+        </div>
         <section class="input-section">
-          <input id="item-input" type="text" placeholder="Add wish item" />
+          <input id="item-input" type="text" placeholder="Add wish item..." />
           <input
             id="description-input"
             type="text"
-            placeholder="Add a brief description"
+            placeholder="Add a brief description..."
           />
-          <input id="link-input" type="url" placeholer="item link" />
+          <input
+            id="link-input"
+            type="url"
+            placeholder="Add item link (optional)"
+          />
           <input
             id="price-input"
             type="number"
-            placeholder="optional - item price"
+            placeholder="Add item price (optional)"
           />
-          <button id="add-btn">Add Wish!</button>
+          <button id="add-btn" class="add-btn">Add Wish!</button>
+          <button id="filter-btn" class="filter-btn">Show Favourites ★</button>
         </section>
-        <main class="output-section">
+        <main id="output-section">
           <!-- rendered by JS -->
         </main>
         <footer>
